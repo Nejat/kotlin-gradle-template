@@ -1,0 +1,6 @@
+include 'spring-approvals-testing'
+include 'spring-boot-jar'
+include 'spring-web-client'
+include 'spring-rest-api'
+include 'common-library'
+

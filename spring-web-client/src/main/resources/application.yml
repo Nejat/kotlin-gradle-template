@@ -1,0 +1,3 @@
+client-properties:
+  host: https://quotes.rest
+  endPoint: qod/categories
