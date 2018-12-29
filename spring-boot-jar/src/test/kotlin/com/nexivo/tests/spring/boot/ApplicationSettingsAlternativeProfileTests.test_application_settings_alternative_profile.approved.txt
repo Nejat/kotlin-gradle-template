@@ -1,0 +1,17 @@
+{
+  "number" : 42.0001,
+  "string" : "foo",
+  "map" : {
+    "hill" : {
+      "player1" : "Jack",
+      "player2" : "Hill",
+      "toy" : "Pail"
+    },
+    "phapha" : {
+      "player1" : "Fooey",
+      "player2" : "Looey",
+      "toy" : "Pen"
+    }
+  },
+  "list" : [ "value1", "value2", "value3" ]
+}

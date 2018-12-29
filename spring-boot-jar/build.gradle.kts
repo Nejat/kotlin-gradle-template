@@ -28,9 +28,19 @@ springBoot {
 
 dependencies {
 
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
 
     implementation(project(":common-library"))
+
+    val approvalTestsVersion: String by extra
+
+    testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("com.approvaltests:approvaltests:$approvalTestsVersion")
+
+    val springBootVersion: String by extra
+
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor:$springBootVersion")
 }
 
 tasks {
