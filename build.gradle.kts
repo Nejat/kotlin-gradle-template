@@ -64,6 +64,12 @@ subprojects {
 
                 delete("$projectDir/out")
                 delete("$projectDir/.gradle")
+
+                fileTree(rootDir) {
+                    include("**/*.log")
+                }.forEach {
+                    delete(it)
+                }
             }
         }
 
