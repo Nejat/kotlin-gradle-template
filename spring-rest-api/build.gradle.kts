@@ -41,6 +41,10 @@ dependencies {
 }
 
 tasks {
+    getByName<Jar>("jar") {
+        enabled = false
+    }
+
     getByName<BootJar>("bootJar") {
         launchScript {
             properties(

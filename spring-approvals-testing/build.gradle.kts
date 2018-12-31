@@ -1,3 +1,5 @@
+import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -31,5 +33,9 @@ dependencies {
 tasks {
     getByName<Jar>("jar") {
         enabled = true
+    }
+    
+    getByName<BootJar>("bootJar") {
+        enabled = false
     }
 }
