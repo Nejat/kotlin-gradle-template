@@ -58,6 +58,15 @@ subprojects {
 
     tasks {
 
+        clean {
+
+            doFirst {
+
+                delete("$projectDir/out")
+                delete("$projectDir/.gradle")
+            }
+        }
+
         val javaTarget: String by extra
 
         withType<KotlinCompile> {
